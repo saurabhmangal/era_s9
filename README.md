@@ -5,14 +5,14 @@
 The Task given was to use CIFAR 10 data and with the given network achieve accuracy of minimum 85%. <br> 
 
 The image transformations are also specified which is as follows:<br> 
-  -RandomCrop 32, 32 (after padding of 4)<br> 
-  -FlipLR<br> 
-  -Followed by CutOut(8, 8)<br> 
+  -horizontal flip<br>
+  -shiftScaleRotate<br>
+  -coarseDropout (max_holes = 1, max_height=16px, max_width=16, min_holes = 1, min_height=16px, min_width=16px, fill_value=(mean of your dataset), mask_fill_value = None)<br>
 
 **File Structure**<br> 
--custom_resnet.py - has the customer resnet model created by me<br>
+-model.py - the custom model created by me. It contains classes for all the model developed for S8, S7 and S6<br>
 
--era_s10_cifar.ipynb - the main file<br> 
+-era_s9_cifar.ipynb - the main file<br> 
 
 -images:<br> 
   -Accuracy & Loss.jpg   -- Plot of train and test accuracy and loss with respect to epochs<br> 
@@ -51,29 +51,28 @@ The tranformation performed as as follows:<br>
         return transforms
         
 Following are the sample images of train dataset:<br> 
-<img src="https://github.com/saurabhmangal/era1_s10/blob/main/images/test_dataset.jpg" alt="alt text" width="600px">
+<img src="https://github.com/saurabhmangal/era_s9/blob/main/images/test_dataset.jpg" alt="alt text" width="600px">
 
 Following are the sample imagese of the test dataset:<br> 
-<img src="https://github.com/saurabhmangal/era1_s10/blob/main/images/test_dataset.jpg" alt="alt text" width="600px">
+<img src="https://github.com/saurabhmangal/era_s9/blob/main/images/test_dataset.jpg" alt="alt text" width="600px">
 
 
 **Custom Resnet ARCHITECTURE**<br> 
-<img src="https://github.com/saurabhmangal/era1_s10/blob/main/images/model10.JPG" alt="alt text" width="600px">
-
+<img src="https://github.com/saurabhmangal/era_s9/blob/main/images/model9.JPG" alt="alt text" width="600px">
 
 **Last Epoch Results:**<br>
-EPOCH: 23<br>
-Loss=0.042819224298000336 LR =-1.5486702470463194e-06 Batch_id=48 Accuracy=98.64: 100% 49/49 [00:09<00:00,  5.15it/s]<br>
-Test set: Average loss: 0.0002, Accuracy: 9239/10000 (92.39%)<br>
+EPOCH: 29 <br>
+Loss=0.2896941900253296 LR =-1.310728163265388e-06 Batch_id=48 Accuracy=90.70: 100% 49/49 [00:06<00:00,  8.05it/s] <br>
+Test set: Average loss: 0.0005, Accuracy: 8508/10000 (85.08%) <br>
 
 Following are the plot of train and test losses and accuracies:<br> 
-<img src="https://github.com/saurabhmangal/era1_s10/blob/main/images/Accuracy%20%26%20Loss.jpg" alt="alt text" width="600px"><br> 
+<img src="https://github.com/saurabhmangal/era_s9/blob/main/images/Accuracy%20%26%20Loss.jpg" alt="alt text" width="600px"><br> 
 
 Some of the sample misclassified images are as follows:<br> 
-<img src="https://github.com/saurabhmangal/era1_s10/blob/main/images/mis_classified_image.jpg" alt="alt text" width="600px"><br> 
+<img src="https://github.com/saurabhmangal/era_s9/blob/main/images/mis_classified_image.jpg" alt="alt text" width="600px"><br> 
 
 Plot for One Cycle LR policy:<br> 
-<img src="https://github.com/saurabhmangal/era1_s10/blob/main/images/oneLRcurve.png" alt="alt text" width="600px"><br> 
+<img src="https://github.com/saurabhmangal/era_s9/blob/main/images/oneLRcurve.png" alt="alt text" width="600px"><br> 
 
 ---------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------
