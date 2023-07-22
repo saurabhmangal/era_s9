@@ -57,7 +57,7 @@ Following are the sample imagese of the test dataset:<br>
 <img src="https://github.com/saurabhmangal/era_s9/blob/main/images/test_dataset.jpg" alt="alt text" width="600px">
 
 
-**Custom Resnet ARCHITECTURE**<br> 
+**MODEL ARCHITECTURE**<br> 
 <img src="https://github.com/saurabhmangal/era_s9/blob/main/images/model9.JPG" alt="alt text" width="600px">
 
 **Last Epoch Results:**<br>
