@@ -51,7 +51,7 @@ The tranformation performed as as follows:<br>
         return transforms
         
 Following are the sample images of train dataset:<br> 
-<img src="https://github.com/saurabhmangal/era_s9/blob/main/images/test_dataset.jpg" alt="alt text" width="600px">
+<img src="https://github.com/saurabhmangal/era_s9/blob/main/images/train_dataset.jpg" alt="alt text" width="600px">
 
 Following are the sample imagese of the test dataset:<br> 
 <img src="https://github.com/saurabhmangal/era_s9/blob/main/images/test_dataset.jpg" alt="alt text" width="600px">
